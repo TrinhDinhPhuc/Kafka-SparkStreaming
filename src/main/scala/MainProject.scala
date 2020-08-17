@@ -19,5 +19,8 @@ object MainProject {
 
     val streamingContext = new StreamingContext(sparkSession.sparkContext,Seconds(1))
     val create_directStream = createDirectStream.createDirecStream(streamingContext)
+    streamingContext.start()
+    streamingContext.awaitTermination()
+
   }
 }
