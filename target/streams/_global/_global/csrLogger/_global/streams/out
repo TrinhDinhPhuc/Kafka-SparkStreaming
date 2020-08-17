@@ -51,3 +51,5 @@
 [debug] downloaded https://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.11/2.4.5/spark-mllib_2.11-2.4.5.jar
 [debug] downloaded https://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.11/2.4.5/spark-sql_2.11-2.4.5.jar
 [debug] downloaded https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.11/2.4.5/spark-core_2.11-2.4.5.jar
+[debug] downloaded https://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.11/2.4.5/spark-catalyst_2.11-2.4.5.jar
+[debug] downloaded https://repo1.maven.org/maven2/org/scalanlp/breeze_2.11/0.13.2/breeze_2.11-0.13.2.jar
