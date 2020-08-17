@@ -121,3 +121,5 @@
 [debug] downloaded https://repo1.maven.org/maven2/org/apache/spark/spark-launcher_2.11/2.4.5/spark-launcher_2.11-2.4.5-javadoc.jar.sha1
 [debug] downloaded https://repo1.maven.org/maven2/org/scalanlp/breeze_2.11/0.13.2/breeze_2.11-0.13.2-javadoc.jar
 [debug] downloaded https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.11/2.4.5/spark-core_2.11-2.4.5-sources.jar
+[debug] downloaded https://repo1.maven.org/maven2/com/chuusai/shapeless_2.11/2.3.2/shapeless_2.11-2.3.2-javadoc.jar
+[debug] downloaded https://repo1.maven.org/maven2/org/spire-math/spire_2.11/0.13.0/spire_2.11-0.13.0-javadoc.jar
