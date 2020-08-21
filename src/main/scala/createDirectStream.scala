@@ -25,7 +25,7 @@ object createDirectStream{
     )
 
 //    stream.map(record => (record.key, record.value) )
-    stream.map(record=>(record.value().toString)).print
+    stream.map(record=>(record.value().toString)).print()
 
 //    Files.write(Paths.get("/home/harry/Documents/Kafka-SparkStreaming/logs/logs.txt"), stream.map(record=>(record.value().toString)).print.toString.getBytes(StandardCharsets.UTF_8))
   }
