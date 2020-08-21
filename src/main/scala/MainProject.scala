@@ -10,6 +10,7 @@ import org.apache.spark.streaming.dstream.DStream
 
 object MainProject {
   def main(args: Array[String]): Unit = {
+
     val sparkSession = SparkSession
       .builder()
       .master("local[*]")
@@ -22,8 +23,8 @@ object MainProject {
 
     val create_directStream:  DStream[String] = createDirectStream.createDirecStream(streamingContext)
 
-    val hdfs_dir : String = "hdfs://hadoop-master:9000/user/hadoopuser/streaming_text_data/"
-    create_directStream.saveAsTextFiles(hdfs_dir)
+    val hdfs_path : String = "hdfs://hadoop-master:9000/user/hadoopuser/streaming_text_data/"
+    create_directStream.saveAsTextFiles(hdfs_path)
 
     streamingContext.start()
 
