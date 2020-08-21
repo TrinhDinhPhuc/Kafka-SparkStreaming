@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76134550-9db2-4ecc-be20-7bb08c278356" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/read_HDFS.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/MainProject.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/MainProject.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/createDirectStream.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/createDirectStream.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/createDirectStream$$anonfun$createDirecStream$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/createDirectStream$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/createDirectStream$.class" afterDir="false" />
@@ -110,25 +112,25 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2613" y="293" width="524" height="484" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1597650236722">
+    <state x="2613" y="293" width="524" height="484" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1598002515136">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2613" y="293" width="524" height="484" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/1920.0.1920.1080/0.27.1920.1018@1920.0.1920.1080" timestamp="1597650236722" />
-    <state width="1874" height="352" key="GridCell.Tab.0.bottom" timestamp="1597997724922">
+    <state x="2613" y="293" width="524" height="484" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/1920.0.1920.1080/0.27.1920.1018@1920.0.1920.1080" timestamp="1598002515136" />
+    <state width="917" height="288" key="GridCell.Tab.0.bottom" timestamp="1598002650648">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="352" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1018@1920.0.1920.1080" timestamp="1597997724922" />
-    <state width="1874" height="352" key="GridCell.Tab.0.center" timestamp="1597997724922">
+    <state width="917" height="288" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1018@1920.0.1920.1080" timestamp="1598002650648" />
+    <state width="917" height="288" key="GridCell.Tab.0.center" timestamp="1598002650648">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="352" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1018@1920.0.1920.1080" timestamp="1597997724922" />
-    <state width="1874" height="352" key="GridCell.Tab.0.left" timestamp="1597997724922">
+    <state width="917" height="288" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1018@1920.0.1920.1080" timestamp="1598002650648" />
+    <state width="917" height="288" key="GridCell.Tab.0.left" timestamp="1598002650648">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="352" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1018@1920.0.1920.1080" timestamp="1597997724922" />
-    <state width="1874" height="352" key="GridCell.Tab.0.right" timestamp="1597997724922">
+    <state width="917" height="288" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1018@1920.0.1920.1080" timestamp="1598002650648" />
+    <state width="917" height="288" key="GridCell.Tab.0.right" timestamp="1598002650648">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="352" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1018@1920.0.1920.1080" timestamp="1597997724922" />
+    <state width="917" height="288" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1018@1920.0.1920.1080" timestamp="1598002650648" />
   </component>
 </project>

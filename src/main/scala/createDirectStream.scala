@@ -3,10 +3,15 @@ import org.apache.spark.streaming.StreamingContext
 import org.apache.spark.streaming.kafka010.ConsumerStrategies.Subscribe
 import org.apache.spark.streaming.kafka010.KafkaUtils
 import org.apache.spark.streaming.kafka010.LocationStrategies.PreferConsistent
-import java.nio.file.{Paths, Files}
+import java.nio.file.{Files, Paths}
 import java.nio.charset.StandardCharsets
+
+import org.apache.kafka.clients.consumer.ConsumerRecord
+import org.apache.spark.streaming.dstream.{DStream, InputDStream}
+
 object createDirectStream{
-  def createDirecStream(streamingContext:StreamingContext): Unit ={
+  def createDirecStream(streamingContext:StreamingContext): DStream[String] ={
+
     val kafkaParams = Map[String,Object](
       "bootstrap.servers" -> "localhost:9092",
       "key.deserializer" -> classOf[StringDeserializer],
@@ -23,10 +28,9 @@ object createDirectStream{
       PreferConsistent,
       Subscribe[String, String](topics, kafkaParams)
     )
-
 //    stream.map(record => (record.key, record.value) )
-    stream.map(record=>(record.value().toString)).print()
+//    stream.map(record=>(record.value().toString)).print()
+    return stream.map(record=>(record.value().toString))
 
-//    Files.write(Paths.get("/home/harry/Documents/Kafka-SparkStreaming/logs/logs.txt"), stream.map(record=>(record.value().toString)).print.toString.getBytes(StandardCharsets.UTF_8))
   }
 }

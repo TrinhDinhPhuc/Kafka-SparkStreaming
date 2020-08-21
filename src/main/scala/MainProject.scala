@@ -6,6 +6,7 @@ import org.apache.spark.streaming.kafka010.ConsumerStrategies.Subscribe
 import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
 import org.apache.spark._
 import org.apache.spark.streaming._
+import org.apache.spark.streaming.dstream.DStream
 
 object MainProject {
   def main(args: Array[String]): Unit = {
@@ -18,9 +19,14 @@ object MainProject {
       .getOrCreate()
 
     val streamingContext = new StreamingContext(sparkSession.sparkContext,Seconds(1))
-    val create_directStream = createDirectStream.createDirecStream(streamingContext)
-    streamingContext.start()
-    streamingContext.awaitTermination()
 
+    val create_directStream:  DStream[String] = createDirectStream.createDirecStream(streamingContext)
+
+    val hdfs_dir : String = "hdfs://hadoop-master:9000/user/hadoopuser/streaming_text_data/"
+    create_directStream.saveAsTextFiles(hdfs_dir)
+
+    streamingContext.start()
+
+    streamingContext.awaitTermination()
   }
 }
